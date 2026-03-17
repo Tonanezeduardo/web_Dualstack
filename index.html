@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dual Stack — Estudio de desarrollo digital especializado en web, apps móviles, automatización e inteligencia artificial." />
+  <title>Dual Stack — Desarrollo Digital del Futuro</title>
+
+  <!-- SEO & Social Media -->
+  <link rel="canonical" href="https://dualstack.dev/" />
+  <meta property="og:title" content="Dual Stack — Desarrollo Digital del Futuro" />
+  <meta property="og:description" content="Especialistas en transformar empresas con software de alto rendimiento, apps móviles e integraciones con IA." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dualstack.dev/" />
+  <meta property="og:image" content="https://dualstack.dev/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dual Stack — Desarrollo Digital del Futuro" />
+  <meta name="twitter:description" content="Especialistas en transformar empresas con software de alto rendimiento y soluciones de IA." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3Crect width='100' height='100' rx='20' fill='%234F8CFF'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' fill='white' text-anchor='middle' font-weight='bold'%3EDS%3C/text%3E%3C/svg%3E" />
+
+  <!-- Performance: Preload fonts -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" as="style" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-ds">Dual</span><span class="logo-stack">Stack</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#proceso">Proceso</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <a href="#contacto" class="btn btn-primary nav-cta">Hablemos de tu proyecto</a>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+
+        <h1 class="hero-title reveal">
+          Construí el futuro digital <br />
+          <span class="gradient-text">de tu empresa</span> con desarrollo web y apps a medida.
+        </h1>
+        <p class="hero-subtitle reveal">
+          Dual Stack crea soluciones digitales modernas para empresas que quieren <strong>automatizar, escalar e innovar</strong>.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#contacto" class="btn btn-primary btn-lg">
+            <span>Hablemos de tu proyecto</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#portfolio" class="btn btn-ghost btn-lg">Ver Proyectos</a>
+        </div>
+
+      </div>
+      <div class="hero-visual reveal">
+        <div class="hero-image-wrapper">
+          <!-- Hero SVG Illustration -->
+          <svg class="hero-img" viewBox="0 0 520 380" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Interfaz futurista Dual Stack">
+            <defs>
+              <linearGradient id="hg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#4F8CFF" stop-opacity="0.18"/><stop offset="100%" stop-color="#7B61FF" stop-opacity="0.08"/></linearGradient>
+              <linearGradient id="hg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#4F8CFF"/><stop offset="100%" stop-color="#00E5FF"/></linearGradient>
+              <linearGradient id="hg3" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#7B61FF"/><stop offset="100%" stop-color="#4F8CFF"/></linearGradient>
+              <filter id="glow"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              <clipPath id="card-clip"><rect width="520" height="380" rx="16"/></clipPath>
+            </defs>
+            <rect width="520" height="380" rx="16" fill="#0f1422"/>
+            <!-- Sidebar -->
+            <rect x="0" y="0" width="80" height="380" fill="rgba(79,140,255,0.05)" rx="0"/>
+            <rect x="16" y="20" width="48" height="48" rx="12" fill="url(#hg3)"/>
+            <text x="40" y="50" font-family="monospace" font-size="14" fill="white" text-anchor="middle" font-weight="bold">DS</text>
+            <circle cx="40" cy="100" r="16" fill="rgba(79,140,255,0.2)"/><rect x="32" y="94" width="16" height="12" rx="2" fill="#4F8CFF" opacity="0.7"/>
+            <circle cx="40" cy="140" r="16" fill="rgba(255,255,255,0.04)"/><rect x="33" y="133" width="14" height="2" rx="1" fill="#8892A4"/><rect x="33" y="138" width="10" height="2" rx="1" fill="#8892A4"/><rect x="33" y="143" width="12" height="2" rx="1" fill="#8892A4"/>
+            <circle cx="40" cy="180" r="16" fill="rgba(255,255,255,0.04)"/><circle cx="40" cy="180" r="6" stroke="#8892A4" stroke-width="2" fill="none"/>
+            <circle cx="40" cy="220" r="16" fill="rgba(255,255,255,0.04)"/><path d="M33 215 l7-5 7 5" stroke="#8892A4" stroke-width="1.5" fill="none"/><path d="M34 215 v7 h12 v-7" stroke="#8892A4" stroke-width="1.5" fill="none"/>
+            <!-- Top bar -->
+            <rect x="80" y="0" width="440" height="52" fill="rgba(255,255,255,0.02)"/>
+            <rect x="96" y="18" width="120" height="16" rx="4" fill="rgba(255,255,255,0.05)"/>
+            <text x="106" y="30" font-size="9" fill="#8892A4" font-family="monospace">Dashboard / Overview</text>
+            <circle cx="454" cy="26" r="14" fill="url(#hg3)"/>
+            <text x="454" y="31" text-anchor="middle" font-size="10" fill="white" font-weight="bold">ED</text>
+            <circle cx="424" cy="26" r="10" fill="rgba(255,255,255,0.05)"/>
+            <path d="M419 22 h10 M419 26 h10 M419 30 h10" stroke="#8892A4" stroke-width="1.2"/>
+            <!-- KPI Cards -->
+            <rect x="96" y="68" width="96" height="64" rx="10" fill="url(#hg1)" stroke="rgba(79,140,255,0.2)" stroke-width="1"/>
+            <text x="108" y="88" font-size="8" fill="#8892A4" font-family="sans-serif">Proyectos activos</text>
+            <text x="108" y="110" font-size="20" fill="#4F8CFF" font-family="monospace" font-weight="bold">12</text>
+            <rect x="204" y="68" width="96" height="64" rx="10" fill="rgba(123,97,255,0.1)" stroke="rgba(123,97,255,0.2)" stroke-width="1"/>
+            <text x="216" y="88" font-size="8" fill="#8892A4" font-family="sans-serif">Entregados</text>
+            <text x="216" y="110" font-size="20" fill="#7B61FF" font-family="monospace" font-weight="bold">50+</text>
+            <rect x="312" y="68" width="96" height="64" rx="10" fill="rgba(0,229,255,0.07)" stroke="rgba(0,229,255,0.2)" stroke-width="1"/>
+            <text x="324" y="88" font-size="8" fill="#8892A4" font-family="sans-serif">Satisfacción</text>
+            <text x="324" y="110" font-size="20" fill="#00E5FF" font-family="monospace" font-weight="bold">5.0★</text>
+            <rect x="420" y="68" width="84" height="64" rx="10" fill="rgba(79,140,255,0.06)" stroke="rgba(79,140,255,0.15)" stroke-width="1"/>
+            <text x="432" y="88" font-size="8" fill="#8892A4" font-family="sans-serif">Uptime</text>
+            <text x="432" y="110" font-size="20" fill="#4F8CFF" font-family="monospace" font-weight="bold">99%</text>
+            <!-- Chart area -->
+            <rect x="96" y="148" width="240" height="140" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+            <text x="112" y="168" font-size="9" fill="#8892A4" font-family="sans-serif">Rendimiento mensual</text>
+            <!-- Chart bars -->
+            <rect x="114" y="230" width="16" height="40" rx="3" fill="url(#hg2)" opacity="0.6"/>
+            <rect x="138" y="210" width="16" height="60" rx="3" fill="url(#hg2)" opacity="0.7"/>
+            <rect x="162" y="220" width="16" height="50" rx="3" fill="url(#hg2)" opacity="0.6"/>
+            <rect x="186" y="195" width="16" height="75" rx="3" fill="url(#hg2)" opacity="0.8"/>
+            <rect x="210" y="205" width="16" height="65" rx="3" fill="url(#hg2)" opacity="0.75"/>
+            <rect x="234" y="185" width="16" height="85" rx="3" fill="url(#hg2)"/>
+            <rect x="258" y="178" width="16" height="92" rx="3" fill="url(#hg2)" opacity="0.9"/>
+            <rect x="282" y="168" width="16" height="102" rx="3" fill="url(#hg2)"/>
+            <!-- Line chart overlay -->
+            <polyline points="122,218 146,198 170,208 194,183 218,193 242,173 266,166 290,156" stroke="#00E5FF" stroke-width="2" fill="none" filter="url(#glow)" opacity="0.8"/>
+            <circle cx="290" cy="156" r="4" fill="#00E5FF" filter="url(#glow)"/>
+            <!-- Right panel -->
+            <rect x="352" y="148" width="152" height="140" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+            <text x="368" y="168" font-size="9" fill="#8892A4" font-family="sans-serif">Proyectos recientes</text>
+            <rect x="368" y="178" width="120" height="24" rx="6" fill="rgba(79,140,255,0.08)"/>
+            <circle cx="382" cy="190" r="6" fill="#4F8CFF"/><text x="394" y="194" font-size="8" fill="#E8EEFF" font-family="sans-serif">ReservaHub</text><text x="454" y="194" font-size="7" fill="#00E5FF" font-family="sans-serif">Live</text>
+            <rect x="368" y="208" width="120" height="24" rx="6" fill="rgba(123,97,255,0.08)"/>
+            <circle cx="382" cy="220" r="6" fill="#7B61FF"/><text x="394" y="224" font-size="8" fill="#E8EEFF" font-family="sans-serif">DataCore</text><text x="446" y="224" font-size="7" fill="#7B61FF" font-family="sans-serif">Build</text>
+            <rect x="368" y="238" width="120" height="24" rx="6" fill="rgba(0,229,255,0.06)"/>
+            <circle cx="382" cy="250" r="6" fill="#00E5FF"/><text x="394" y="254" font-size="8" fill="#E8EEFF" font-family="sans-serif">FlowWork</text><text x="448" y="254" font-size="7" fill="#4F8CFF" font-family="sans-serif">QA</text>
+            <!-- Code editor area -->
+            <rect x="96" y="304" width="408" height="60" rx="10" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+            <circle cx="112" cy="318" r="4" fill="#FF5F57"/><circle cx="126" cy="318" r="4" fill="#FEBC2E"/><circle cx="140" cy="318" r="4" fill="#28C840"/>
+            <text x="112" y="338" font-size="8" fill="#7B61FF" font-family="monospace">const</text>
+            <text x="140" y="338" font-size="8" fill="#4F8CFF" font-family="monospace">stack</text>
+            <text x="168" y="338" font-size="8" fill="#E8EEFF" font-family="monospace">=</text>
+            <text x="178" y="338" font-size="8" fill="#00E5FF" font-family="monospace">[&#39;React&#39;,</text>
+            <text x="234" y="338" font-size="8" fill="#00E5FF" font-family="monospace">&#39;Node&#39;,</text>
+            <text x="278" y="338" font-size="8" fill="#00E5FF" font-family="monospace">&#39;AI&#39;]</text>
+            <text x="112" y="354" font-size="8" fill="#8892A4" font-family="monospace">// Building the future...</text>
+          </svg>
+          <div class="hero-float-card card-1 glassmorphism">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#4F8CFF" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            <div>
+              <div class="float-label">Rendimiento</div>
+              <div class="float-value">+340%</div>
+            </div>
+          </div>
+          <div class="hero-float-card card-2 glassmorphism">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#00E5FF" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            <div>
+              <div class="float-label">Tiempo de lanzamiento</div>
+              <div class="float-value">4–8 sem.</div>
+            </div>
+          </div>
+          <div class="hero-float-card card-3 glassmorphism">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#7B61FF" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <div>
+              <div class="float-label">Satisfacción</div>
+              <div class="float-value">5.0 ★</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICIOS ========== -->
+  <section class="section services" id="servicios">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Servicios</div>
+        <h2>Todo lo que tu empresa<br /><span class="gradient-text">necesita para crecer</span></h2>
+        <p>Soluciones digitales completas, diseñadas para negocios que buscan resultados reales.</p>
+      </div>
+      <div class="services-grid">
+
+        <!-- Web -->
+        <div class="service-card glassmorphism reveal">
+          <div class="service-icon-wrap icon-blue">
+            <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+            </svg>
+          </div>
+          <h3>Desarrollo Web</h3>
+          <p>Páginas web a medida, landing pages, ecommerce y plataformas escalables con tecnología de vanguardia.</p>
+
+          <div class="service-glow glow-blue"></div>
+        </div>
+
+        <!-- Apps -->
+        <div class="service-card glassmorphism reveal">
+          <div class="service-icon-wrap icon-violet">
+            <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+              <rect x="7" y="2" width="10" height="20" rx="2"/><path d="M12 18h.01"/>
+            </svg>
+          </div>
+          <h3>Desarrollo de Apps</h3>
+          <p>Aplicaciones móviles y web diseñadas para optimizar procesos empresariales y mejorar la experiencia del usuario.</p>
+
+          <div class="service-glow glow-violet"></div>
+        </div>
+
+        <!-- IA & Automation -->
+        <div class="service-card glassmorphism reveal">
+          <div class="service-icon-wrap icon-cyan">
+            <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="12" r="3"/><path d="M12 2v2.5M12 19.5V22M4.22 4.22l1.77 1.77M18.01 18.01l1.77 1.77M2 12h2.5M19.5 12H22M4.22 19.78l1.77-1.77M18.01 5.99l1.77-1.77"/>
+            </svg>
+          </div>
+          <h3>Automatización e IA</h3>
+          <p>Herramientas de automatización, integraciones con IA y flujos digitales para mejorar la productividad de tu equipo.</p>
+
+          <div class="service-glow glow-cyan"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PORTFOLIO ========== -->
+  <section class="section portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Portfolio</div>
+        <h2>Proyectos que <span class="gradient-text">hablan por sí solos</span></h2>
+        <p>Una muestra de lo que construimos para nuestros clientes.</p>
+      </div>
+      <div class="portfolio-grid">
+
+        <div class="portfolio-card reveal">
+          <div class="portfolio-img-wrap">
+            <svg viewBox="0 0 420 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;">
+              <rect width="420" height="220" fill="#0c1020"/>
+              <rect x="0" y="0" width="420" height="40" fill="rgba(79,140,255,0.06)"/>
+              <circle cx="18" cy="20" r="6" fill="#FF5F57"/><circle cx="36" cy="20" r="6" fill="#FEBC2E"/><circle cx="54" cy="20" r="6" fill="#28C840"/>
+              <text x="100" y="25" font-size="10" fill="#8892A4" font-family="monospace">reservahub.app / dashboard</text>
+              <!-- Table map -->
+              <rect x="20" y="55" width="180" height="150" rx="8" fill="rgba(79,140,255,0.04)" stroke="rgba(79,140,255,0.15)" stroke-width="1"/>
+              <text x="30" y="72" font-size="8" fill="#8892A4" font-family="sans-serif">Mapa de mesas — Salón principal</text>
+              <!-- Tables -->
+              <rect x="30" y="80" width="36" height="28" rx="4" fill="rgba(79,140,255,0.25)" stroke="#4F8CFF" stroke-width="1"/>
+              <text x="48" y="98" font-size="7" fill="#4F8CFF" text-anchor="middle" font-family="monospace">T1</text>
+              <rect x="80" y="80" width="36" height="28" rx="4" fill="rgba(0,229,255,0.15)" stroke="#00E5FF" stroke-width="1"/>
+              <text x="98" y="98" font-size="7" fill="#00E5FF" text-anchor="middle" font-family="monospace">T2</text>
+              <rect x="130" y="80" width="36" height="28" rx="4" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+              <text x="148" y="98" font-size="7" fill="#8892A4" text-anchor="middle" font-family="monospace">T3</text>
+              <rect x="30" y="122" width="36" height="28" rx="4" fill="rgba(123,97,255,0.2)" stroke="#7B61FF" stroke-width="1"/>
+              <text x="48" y="140" font-size="7" fill="#7B61FF" text-anchor="middle" font-family="monospace">T4</text>
+              <rect x="80" y="122" width="36" height="28" rx="4" fill="rgba(79,140,255,0.25)" stroke="#4F8CFF" stroke-width="1"/>
+              <text x="98" y="140" font-size="7" fill="#4F8CFF" text-anchor="middle" font-family="monospace">T5</text>
+              <rect x="130" y="122" width="36" height="28" rx="4" fill="rgba(0,229,255,0.15)" stroke="#00E5FF" stroke-width="1"/>
+              <text x="148" y="140" font-size="7" fill="#00E5FF" text-anchor="middle" font-family="monospace">T6</text>
+              <rect x="30" y="164" width="80" height="28" rx="4" fill="rgba(79,140,255,0.1)" stroke="rgba(79,140,255,0.2)" stroke-width="1"/>
+              <text x="70" y="182" font-size="7" fill="#4F8CFF" text-anchor="middle">Reservado 8pm</text>
+              <rect x="120" y="164" width="60" height="28" rx="4" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+              <text x="150" y="182" font-size="7" fill="#8892A4" text-anchor="middle">Disponible</text>
+              <!-- Bookings panel -->
+              <rect x="212" y="55" width="192" height="150" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+              <text x="222" y="72" font-size="8" fill="#8892A4" font-family="sans-serif">Reservas de hoy</text>
+              <rect x="222" y="78" width="172" height="28" rx="6" fill="rgba(79,140,255,0.1)"/>
+              <text x="234" y="89" font-size="8" fill="#4F8CFF" font-family="sans-serif" font-weight="bold">García</text><text x="234" y="100" font-size="7" fill="#8892A4" font-family="sans-serif">T1 · 4 pax · 8:00pm</text>
+              <circle cx="374" cy="92" r="8" fill="rgba(0,229,255,0.2)"/><text x="374" y="96" font-size="7" fill="#00E5FF" text-anchor="middle">✓</text>
+              <rect x="222" y="112" width="172" height="28" rx="6" fill="rgba(123,97,255,0.08)"/>
+              <text x="234" y="123" font-size="8" fill="#7B61FF" font-family="sans-serif" font-weight="bold">López</text><text x="234" y="134" font-size="7" fill="#8892A4" font-family="sans-serif">T4 · 2 pax · 9:30pm</text>
+              <circle cx="374" cy="126" r="8" fill="rgba(254,188,46,0.2)"/><text x="374" y="130" font-size="8" fill="#FEBC2E" text-anchor="middle">!</text>
+              <rect x="222" y="146" width="172" height="28" rx="6" fill="rgba(79,140,255,0.06)"/>
+              <text x="234" y="157" font-size="8" fill="#4F8CFF" font-family="sans-serif" font-weight="bold">Martín</text><text x="234" y="168" font-size="7" fill="#8892A4" font-family="sans-serif">T2 · 6 pax · 10:00pm</text>
+              <circle cx="374" cy="160" r="8" fill="rgba(255,255,255,0.05)"/><text x="374" y="164" font-size="8" fill="#8892A4" text-anchor="middle">○</text>
+              <!-- Stat row -->
+              <rect x="222" y="182" width="50" height="16" rx="4" fill="rgba(0,229,255,0.1)"/>
+              <text x="247" y="193" font-size="7" fill="#00E5FF" text-anchor="middle">12 hoy</text>
+              <rect x="278" y="182" width="50" height="16" rx="4" fill="rgba(79,140,255,0.1)"/>
+              <text x="303" y="193" font-size="7" fill="#4F8CFF" text-anchor="middle">8 conf.</text>
+              <rect x="334" y="182" width="50" height="16" rx="4" fill="rgba(123,97,255,0.1)"/>
+              <text x="359" y="193" font-size="7" fill="#7B61FF" text-anchor="middle">4 libre</text>
+            </svg>
+            <div class="portfolio-overlay">
+              <span class="portfolio-tag">Web App</span>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h3>ReservaHub</h3>
+            <p>Plataforma de reservas inteligente para restaurantes con gestión de mesas en tiempo real, confirmaciones automáticas y panel de administración.</p>
+
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal">
+          <div class="portfolio-img-wrap">
+            <svg viewBox="0 0 420 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;">
+              <defs>
+                <linearGradient id="dg1" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#4F8CFF" stop-opacity="0"/><stop offset="100%" stop-color="#4F8CFF" stop-opacity="0.6"/></linearGradient>
+                <linearGradient id="dg2" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#00E5FF" stop-opacity="0"/><stop offset="100%" stop-color="#00E5FF" stop-opacity="0.4"/></linearGradient>
+              </defs>
+              <rect width="420" height="220" fill="#0c1020"/>
+              <!-- Top bar -->
+              <rect width="420" height="36" fill="rgba(255,255,255,0.02)"/>
+              <text x="14" y="23" font-size="11" fill="#4F8CFF" font-family="monospace" font-weight="bold">DataCore</text>
+              <text x="80" y="23" font-size="9" fill="#8892A4" font-family="sans-serif">Analytics</text>
+              <rect x="280" y="10" width="64" height="16" rx="8" fill="rgba(0,229,255,0.1)" stroke="rgba(0,229,255,0.2)" stroke-width="1"/>
+              <text x="312" y="22" font-size="8" fill="#00E5FF" text-anchor="middle">Live ●</text>
+              <!-- KPI row -->
+              <rect x="14" y="44" width="80" height="44" rx="6" fill="rgba(79,140,255,0.08)" stroke="rgba(79,140,255,0.15)" stroke-width="1"/>
+              <text x="22" y="58" font-size="7" fill="#8892A4">Revenue</text>
+              <text x="22" y="74" font-size="13" fill="#4F8CFF" font-family="monospace" font-weight="bold">$84K</text>
+              <rect x="104" y="44" width="80" height="44" rx="6" fill="rgba(123,97,255,0.08)" stroke="rgba(123,97,255,0.15)" stroke-width="1"/>
+              <text x="112" y="58" font-size="7" fill="#8892A4">Usuarios</text>
+              <text x="112" y="74" font-size="13" fill="#7B61FF" font-family="monospace" font-weight="bold">4,280</text>
+              <rect x="194" y="44" width="80" height="44" rx="6" fill="rgba(0,229,255,0.06)" stroke="rgba(0,229,255,0.15)" stroke-width="1"/>
+              <text x="202" y="58" font-size="7" fill="#8892A4">Conv.</text>
+              <text x="202" y="74" font-size="13" fill="#00E5FF" font-family="monospace" font-weight="bold">3.8%</text>
+              <rect x="284" y="44" width="122" height="44" rx="6" fill="rgba(79,140,255,0.05)" stroke="rgba(79,140,255,0.1)" stroke-width="1"/>
+              <text x="292" y="58" font-size="7" fill="#8892A4">NPS Score</text>
+              <text x="292" y="74" font-size="13" fill="#4F8CFF" font-family="monospace" font-weight="bold">72 ↑</text>
+              <!-- Main chart -->
+              <rect x="14" y="98" width="240" height="108" rx="6" fill="rgba(255,255,255,0.015)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+              <text x="24" y="114" font-size="8" fill="#8892A4">Ingresos — últimos 7 meses</text>
+              <!-- Area chart -->
+              <polygon points="24,190 24,172 58,158 92,162 126,144 160,138 194,120 228,112 228,190" fill="url(#dg1)" opacity="0.5"/>
+              <polyline points="24,172 58,158 92,162 126,144 160,138 194,120 228,112" stroke="#4F8CFF" stroke-width="2" fill="none"/>
+              <polygon points="24,190 24,180 58,168 92,174 126,156 160,165 194,148 228,140 228,190" fill="url(#dg2)" opacity="0.3"/>
+              <polyline points="24,180 58,168 92,174 126,156 160,165 194,148 228,140" stroke="#00E5FF" stroke-width="1.5" fill="none" stroke-dasharray="4 2"/>
+              <!-- Grid lines -->
+              <line x1="24" y1="140" x2="228" y2="140" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+              <line x1="24" y1="160" x2="228" y2="160" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+              <line x1="24" y1="180" x2="228" y2="180" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+              <!-- Tooltip -->
+              <rect x="172" y="104" width="54" height="28" rx="4" fill="rgba(79,140,255,0.9)"/>
+              <text x="199" y="116" font-size="7" fill="white" text-anchor="middle">Ago</text>
+              <text x="199" y="128" font-size="9" fill="white" text-anchor="middle" font-weight="bold">$14.2K</text>
+              <!-- Donut chart -->
+              <rect x="266" y="98" width="140" height="108" rx="6" fill="rgba(255,255,255,0.015)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+              <text x="276" y="114" font-size="8" fill="#8892A4">Canales</text>
+              <circle cx="336" cy="158" r="32" fill="none" stroke="#4F8CFF" stroke-width="8" stroke-dasharray="80 121" stroke-dashoffset="0" transform="rotate(-90 336 158)"/>
+              <circle cx="336" cy="158" r="32" fill="none" stroke="#7B61FF" stroke-width="8" stroke-dasharray="50 151" stroke-dashoffset="-80" transform="rotate(-90 336 158)"/>
+              <circle cx="336" cy="158" r="32" fill="none" stroke="#00E5FF" stroke-width="8" stroke-dasharray="31 170" stroke-dashoffset="-130" transform="rotate(-90 336 158)"/>
+              <circle cx="336" cy="158" r="20" fill="#0c1020"/>
+              <text x="336" y="162" font-size="8" fill="#E8EEFF" text-anchor="middle" font-weight="bold">Mix</text>
+              <text x="283" y="182" font-size="6" fill="#4F8CFF">■ Web 40%</text>
+              <text x="318" y="182" font-size="6" fill="#7B61FF">■ App 25%</text>
+              <text x="350" y="182" font-size="6" fill="#00E5FF">■ API</text>
+            </svg>
+            <div class="portfolio-overlay">
+              <span class="portfolio-tag">Dashboard</span>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h3>DataCore Analytics</h3>
+            <p>Sistema de dashboard y analítica empresarial con visualizaciones en tiempo real, KPIs personalizados e integraciones con múltiples fuentes de datos.</p>
+
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal">
+          <div class="portfolio-img-wrap">
+            <svg viewBox="0 0 420 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;">
+              <rect width="420" height="220" fill="#0c1020"/>
+              <!-- background glow -->
+              <circle cx="80" cy="110" r="80" fill="rgba(123,97,255,0.07)"/>
+              <circle cx="340" cy="110" r="80" fill="rgba(0,229,255,0.05)"/>
+              <!-- Phone frame -->
+              <rect x="150" y="10" width="120" height="200" rx="18" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+              <rect x="155" y="15" width="110" height="190" rx="14" fill="#0a0e1a"/>
+              <!-- Phone notch -->
+              <rect x="190" y="15" width="40" height="8" rx="4" fill="rgba(255,255,255,0.08)"/>
+              <!-- App header -->
+              <rect x="155" y="23" width="110" height="30" fill="rgba(79,140,255,0.08)"/>
+              <text x="165" y="41" font-size="10" fill="#4F8CFF" font-family="sans-serif" font-weight="bold">FlowWork</text>
+              <circle cx="248" cy="38" r="8" fill="rgba(79,140,255,0.2)"/>
+              <text x="248" y="42" font-size="7" fill="#4F8CFF" text-anchor="middle">+</text>
+              <!-- Tasks -->
+              <rect x="160" y="58" width="100" height="20" rx="5" fill="rgba(79,140,255,0.12)" stroke="rgba(79,140,255,0.2)" stroke-width="1"/>
+              <circle cx="172" cy="68" r="5" fill="rgba(0,229,255,0.4)" stroke="#00E5FF" stroke-width="1"/>
+              <text x="183" y="71" font-size="7" fill="#E8EEFF" font-family="sans-serif">Deploy nuevo módulo</text>
+              <rect x="160" y="82" width="100" height="20" rx="5" fill="rgba(123,97,255,0.1)" stroke="rgba(123,97,255,0.2)" stroke-width="1"/>
+              <circle cx="172" cy="92" r="5" stroke="#7B61FF" stroke-width="1.5" fill="none"/>
+              <line x1="169" y1="92" x2="175" y2="92" stroke="#7B61FF" stroke-width="1"/><line x1="172" y1="89" x2="172" y2="95" stroke="#7B61FF" stroke-width="1"/>
+              <text x="183" y="95" font-size="7" fill="#E8EEFF" font-family="sans-serif">Review PR #47</text>
+              <rect x="160" y="106" width="100" height="20" rx="5" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+              <circle cx="172" cy="116" r="5" stroke="#8892A4" stroke-width="1" fill="none"/>
+              <text x="183" y="119" font-size="7" fill="#8892A4" font-family="sans-serif">Reunión cliente 4pm</text>
+              <!-- AI Chat -->
+              <rect x="158" y="132" width="104" height="42" rx="6" fill="rgba(0,0,0,0.3)" stroke="rgba(79,140,255,0.15)" stroke-width="1"/>
+              <text x="164" y="144" font-size="6" fill="#4F8CFF" font-family="sans-serif" font-weight="bold">IA Assistant</text>
+              <rect x="164" y="148" width="72" height="14" rx="3" fill="rgba(79,140,255,0.15)"/>
+              <text x="170" y="158" font-size="6" fill="#4F8CFF" font-family="sans-serif">Tenés 3 tareas hoy 🎯</text>
+              <rect x="186" y="166" width="68" height="5" rx="2" fill="rgba(255,255,255,0.05)"/>
+              <!-- Bottom nav -->
+              <rect x="155" y="186" width="110" height="19" rx="0" fill="rgba(255,255,255,0.03)" rx="0"/>
+              <text x="180" y="198" font-size="9" fill="#4F8CFF" text-anchor="middle">⊞</text>
+              <text x="210" y="198" font-size="9" fill="#8892A4" text-anchor="middle">◈</text>
+              <text x="240" y="198" font-size="9" fill="#8892A4" text-anchor="middle">◉</text>
+              <!-- Right side info -->
+              <rect x="284" y="30" width="118" height="60" rx="8" fill="rgba(123,97,255,0.08)" stroke="rgba(123,97,255,0.15)" stroke-width="1"/>
+              <text x="296" y="48" font-size="8" fill="#8892A4">Productividad</text>
+              <text x="296" y="68" font-size="18" fill="#7B61FF" font-family="monospace" font-weight="bold">↑ 68%</text>
+              <text x="296" y="82" font-size="7" fill="#8892A4">vs. mes anterior</text>
+              <rect x="284" y="100" width="118" height="50" rx="8" fill="rgba(0,229,255,0.06)" stroke="rgba(0,229,255,0.12)" stroke-width="1"/>
+              <text x="296" y="117" font-size="8" fill="#8892A4">Equipo activo</text>
+              <text x="296" y="135" font-size="16" fill="#00E5FF" font-family="monospace" font-weight="bold">8/10</text>
+              <!-- Left side info -->
+              <rect x="18" y="30" width="118" height="60" rx="8" fill="rgba(79,140,255,0.08)" stroke="rgba(79,140,255,0.15)" stroke-width="1"/>
+              <text x="30" y="48" font-size="8" fill="#8892A4">Tareas hoy</text>
+              <text x="30" y="68" font-size="18" fill="#4F8CFF" font-family="monospace" font-weight="bold">3 / 7</text>
+              <rect x="30" y="74" width="94" height="6" rx="3" fill="rgba(255,255,255,0.05)"/>
+              <rect x="30" y="74" width="40" height="6" rx="3" fill="#4F8CFF" opacity="0.7"/>
+              <rect x="18" y="100" width="118" height="50" rx="8" fill="rgba(255,215,0,0.06)" stroke="rgba(255,215,0,0.12)" stroke-width="1"/>
+              <text x="30" y="117" font-size="8" fill="#8892A4">AI Insights</text>
+              <text x="30" y="133" font-size="8" fill="#FFD700" font-family="sans-serif">2h ahorradas hoy ✨</text>
+            </svg>
+            <div class="portfolio-overlay">
+              <span class="portfolio-tag">Mobile App</span>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h3>FlowWork App</h3>
+            <p>Aplicación móvil de productividad empresarial con gestión de tareas, colaboración en equipo y reportes automáticos impulsados por IA.</p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROCESO ========== -->
+  <section class="section proceso" id="proceso">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Proceso</div>
+        <h2>Cómo <span class="gradient-text">trabajamos contigo</span></h2>
+        <p>Un proceso claro y transparente de principio a fin.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-step reveal">
+          <div class="timeline-dot dot-blue">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          </div>
+          <div class="timeline-content glassmorphism">
+            <span class="step-number">01</span>
+            <h4>Descubrimiento y Estrategia</h4>
+            <p>Entendemos tus objetivos, el mercado y definimos la hoja de ruta del proyecto.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step reveal">
+          <div class="timeline-dot dot-violet">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 2l2 7h7l-5.5 4 2 7L12 16l-5.5 4 2-7L3 9h7z"/></svg>
+          </div>
+          <div class="timeline-content glassmorphism">
+            <span class="step-number">02</span>
+            <h4>Diseño UX/UI</h4>
+            <p>Creamos wireframes, prototipos interactivos y el sistema visual del producto.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step reveal">
+          <div class="timeline-dot dot-cyan">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <div class="timeline-content glassmorphism">
+            <span class="step-number">03</span>
+            <h4>Desarrollo</h4>
+            <p>Construimos la solución con tecnologías modernas y código de alta calidad.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step reveal">
+          <div class="timeline-dot dot-blue">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </div>
+          <div class="timeline-content glassmorphism">
+            <span class="step-number">04</span>
+            <h4>Pruebas y Optimización</h4>
+            <p>Testing exhaustivo, optimización de rendimiento y ajustes finales.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step reveal">
+          <div class="timeline-dot dot-violet">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="timeline-content glassmorphism">
+            <span class="step-number">05</span>
+            <h4>Lanzamiento</h4>
+            <p>Deploy, monitoreo post-lanzamiento y soporte continuo para tu producto.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NOSOTROS ========== -->
+  <section class="section about" id="nosotros">
+    <div class="about-orb about-orb-1"></div>
+    <div class="about-orb about-orb-2"></div>
+    <div class="container about-inner">
+      <div class="about-text reveal">
+        <div class="section-tag">Nosotros</div>
+        <h2>Tecnología que<br /><span class="gradient-text">transforma negocios</span></h2>
+        <p>
+          Dual Stack es un estudio de desarrollo digital enfocado en crear plataformas web de alto rendimiento, aplicaciones móviles y sistemas inteligentes de automatización.
+        </p>
+        <p>
+          Ayudamos a las empresas a <strong>transformar sus procesos</strong> mediante tecnología moderna, combinando ingeniería de software de primer nivel con un diseño que cautiva a los usuarios.
+        </p>
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="feature-dot dot-blue"></div>
+            <span>Código limpio y escalable</span>
+          </div>
+          <div class="about-feature">
+            <div class="feature-dot dot-violet"></div>
+            <span>Diseño centrado en el usuario</span>
+          </div>
+          <div class="about-feature">
+            <div class="feature-dot dot-cyan"></div>
+            <span>Entregas ágiles y transparentes</span>
+          </div>
+          <div class="about-feature">
+            <div class="feature-dot dot-blue"></div>
+            <span>Soporte continuo post-lanzamiento</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-visual reveal">
+        <div class="about-img-wrapper">
+          <svg class="about-svg-art" viewBox="0 0 440 380" xmlns="http://www.w3.org/2000/svg" aria-label="Equipo Dual Stack">
+            <defs>
+              <linearGradient id="ag1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#4F8CFF" stop-opacity="0.2"/><stop offset="100%" stop-color="#7B61FF" stop-opacity="0.08"/></linearGradient>
+              <linearGradient id="ag2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#7B61FF"/><stop offset="100%" stop-color="#00E5FF"/></linearGradient>
+              <filter id="soft-glow"><feGaussianBlur stdDeviation="8" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+            </defs>
+            <rect width="440" height="380" rx="16" fill="#0e1424"/>
+            <!-- Background glows -->
+            <circle cx="220" cy="190" r="160" fill="rgba(123,97,255,0.05)"/>
+            <circle cx="80" cy="80" r="80" fill="rgba(79,140,255,0.06)"/>
+            <circle cx="360" cy="300" r="80" fill="rgba(0,229,255,0.04)"/>
+            <!-- Circuit lines -->
+            <path d="M0 100 h80 v40 h60 v-20 h40" stroke="rgba(79,140,255,0.15)" stroke-width="1" fill="none"/>
+            <path d="M440 280 h-80 v-40 h-60 v20 h-40" stroke="rgba(0,229,255,0.12)" stroke-width="1" fill="none"/>
+            <path d="M0 300 h40 v-60 h120" stroke="rgba(123,97,255,0.1)" stroke-width="1" fill="none"/>
+            <!-- Desk -->
+            <rect x="60" y="260" width="320" height="6" rx="3" fill="rgba(255,255,255,0.06)"/>
+            <!-- Monitor 1 -->
+            <rect x="80" y="160" width="140" height="95" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(79,140,255,0.2)" stroke-width="1.5"/>
+            <rect x="84" y="164" width="132" height="87" rx="6" fill="#08101e"/>
+            <text x="90" y="180" font-size="7" fill="#4F8CFF" font-family="monospace">// main.ts</text>
+            <text x="90" y="193" font-size="7" fill="#7B61FF" font-family="monospace">const</text>
+            <text x="118" y="193" font-size="7" fill="#00E5FF" font-family="monospace">app</text>
+            <text x="134" y="193" font-size="7" fill="#E8EEFF" font-family="monospace">= new</text>
+            <text x="160" y="193" font-size="7" fill="#4F8CFF" font-family="monospace">DualStack();</text>
+            <text x="90" y="206" font-size="7" fill="#8892A4" font-family="monospace">app.init({</text>
+            <text x="100" y="219" font-size="7" fill="#00E5FF" font-family="monospace">ai: true,</text>
+            <text x="100" y="232" font-size="7" fill="#00E5FF" font-family="monospace">scale: ∞</text>
+            <text x="90" y="245" font-size="7" fill="#8892A4" font-family="monospace">});</text>
+            <!-- Cursor blinking line -->
+            <rect x="90" y="247" width="1" height="8" fill="#4F8CFF" opacity="0.8"/>
+            <!-- Monitor stand -->
+            <rect x="143" y="255" width="14" height="6" rx="2" fill="rgba(255,255,255,0.05)"/>
+            <!-- Monitor 2 -->
+            <rect x="230" y="150" width="140" height="105" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(123,97,255,0.2)" stroke-width="1.5"/>
+            <rect x="234" y="154" width="132" height="97" rx="6" fill="#08101e"/>
+            <!-- Dashboard mini -->
+            <rect x="240" y="161" width="58" height="32" rx="4" fill="rgba(79,140,255,0.1)"/>
+            <text x="246" y="173" font-size="6" fill="#8892A4">Revenue</text>
+            <text x="246" y="187" font-size="11" fill="#4F8CFF" font-weight="bold">$84K</text>
+            <rect x="306" y="161" width="52" height="32" rx="4" fill="rgba(0,229,255,0.08)"/>
+            <text x="312" y="173" font-size="6" fill="#8892A4">NPS</text>
+            <text x="312" y="187" font-size="11" fill="#00E5FF" font-weight="bold">72</text>
+            <!-- Mini chart -->
+            <polyline points="240,218 256,210 272,214 288,202 304,206 320,194 336,188 352,182" stroke="#7B61FF" stroke-width="1.5" fill="none"/>
+            <polygon points="240,230 240,218 256,210 272,214 288,202 304,206 320,194 336,188 352,182 352,230" fill="rgba(123,97,255,0.1)"/>
+            <rect x="234" y="236" width="132" height="10" rx="4" fill="rgba(255,255,255,0.02)"/>
+            <rect x="234" y="236" width="80" height="10" rx="4" fill="rgba(123,97,255,0.25)"/>
+            <!-- Monitor stand -->
+            <rect x="289" y="255" width="14" height="6" rx="2" fill="rgba(255,255,255,0.05)"/>
+            <!-- Person silhouette 1 -->
+            <circle cx="130" cy="138" r="18" fill="url(#ag2)" opacity="0.9" filter="url(#soft-glow)"/>
+            <text x="130" y="143" font-size="10" fill="white" text-anchor="middle" font-weight="bold">ED</text>
+            <!-- Person silhouette 2 -->
+            <circle cx="300" cy="128" r="18" fill="rgba(79,140,255,0.8)" filter="url(#soft-glow)"/>
+            <text x="300" y="133" font-size="10" fill="white" text-anchor="middle" font-weight="bold">DS</text>
+            <!-- Floating elements -->
+            <rect x="340" y="60" width="80" height="60" rx="10" fill="rgba(79,140,255,0.06)" stroke="rgba(79,140,255,0.15)" stroke-width="1"/>
+            <text x="380" y="82" font-size="8" fill="#8892A4" text-anchor="middle">Deploy</text>
+            <text x="380" y="98" font-size="14" fill="#4F8CFF" text-anchor="middle" font-weight="bold">✓</text>
+            <text x="380" y="112" font-size="7" fill="#00E5FF" text-anchor="middle">Exitoso</text>
+            <rect x="20" y="70" width="80" height="50" rx="10" fill="rgba(0,229,255,0.05)" stroke="rgba(0,229,255,0.12)" stroke-width="1"/>
+            <text x="60" y="90" font-size="7" fill="#8892A4" text-anchor="middle">Commits hoy</text>
+            <text x="60" y="108" font-size="16" fill="#00E5FF" text-anchor="middle" font-weight="bold">47</text>
+            <!-- Coffee cup -->
+            <rect x="200" y="256" width="20" height="14" rx="3" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+            <path d="M220 260 q6 0 6 5 q0 5 -6 5" stroke="rgba(255,255,255,0.1)" stroke-width="1" fill="none"/>
+            <!-- Ground shadow -->
+            <ellipse cx="220" cy="278" rx="160" ry="8" fill="rgba(0,0,0,0.3)"/>
+            <!-- Tech stack pills -->
+            <rect x="60" y="308" width="48" height="18" rx="9" fill="rgba(79,140,255,0.1)" stroke="rgba(79,140,255,0.2)" stroke-width="1"/>
+            <text x="84" y="321" font-size="7" fill="#4F8CFF" text-anchor="middle">React</text>
+            <rect x="116" y="308" width="52" height="18" rx="9" fill="rgba(123,97,255,0.1)" stroke="rgba(123,97,255,0.2)" stroke-width="1"/>
+            <text x="142" y="321" font-size="7" fill="#7B61FF" text-anchor="middle">Next.js</text>
+            <rect x="176" y="308" width="48" height="18" rx="9" fill="rgba(0,229,255,0.08)" stroke="rgba(0,229,255,0.15)" stroke-width="1"/>
+            <text x="200" y="321" font-size="7" fill="#00E5FF" text-anchor="middle">Node.js</text>
+            <rect x="232" y="308" width="52" height="18" rx="9" fill="rgba(79,140,255,0.1)" stroke="rgba(79,140,255,0.2)" stroke-width="1"/>
+            <text x="258" y="321" font-size="7" fill="#4F8CFF" text-anchor="middle">OpenAI</text>
+            <rect x="292" y="308" width="60" height="18" rx="9" fill="rgba(123,97,255,0.08)" stroke="rgba(123,97,255,0.15)" stroke-width="1"/>
+            <text x="322" y="321" font-size="7" fill="#7B61FF" text-anchor="middle">PostgreSQL</text>
+            <!-- Stars -->
+            <text x="30" y="340" font-size="24" fill="#FFD700" opacity="0.9">★★★★★</text>
+            <text x="175" y="340" font-size="9" fill="#8892A4">100% clientes satisfechos</text>
+            <text x="370" y="340" font-size="9" fill="#4F8CFF">5.0</text>
+          </svg>
+          <div class="about-badge glassmorphism">
+            <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="#4F8CFF" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            <div>
+              <div class="float-label">Tiempo de respuesta</div>
+              <div class="float-value">&lt; 24 horas</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIOS ========== -->
+  <section class="section testimonials" id="testimonios">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Testimonios</div>
+        <h2>Lo que dicen <span class="gradient-text">nuestros clientes</span></h2>
+      </div>
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card glassmorphism reveal">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Dual Stack transformó completamente nuestra operación. La plataforma web que desarrollaron redujo nuestros tiempos de gestión en un 60%. Profesionales, ágiles y con una visión tecnológica impresionante."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar avatar-1">MG</div>
+            <div>
+              <div class="author-name">Martina García</div>
+              <div class="author-role">CEO — RestaurantPro</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card glassmorphism reveal">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"El dashboard que construyeron para nuestra empresa nos da visibilidad total del negocio en tiempo real. Era exactamente lo que necesitábamos. El equipo fue muy transparente durante todo el proceso."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar avatar-2">RL</div>
+            <div>
+              <div class="author-name">Rodrigo López</div>
+              <div class="author-role">COO — DataCore Analytics</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card glassmorphism reveal">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"La app que desarrolló Dual Stack superó todas nuestras expectativas. Las integraciones con IA que implementaron ahorraron horas de trabajo manual a nuestro equipo. Los recomiendo sin dudarlo."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar avatar-3">SP</div>
+            <div>
+              <div class="author-name">Sofía Pereira</div>
+              <div class="author-role">Product Manager — FlowWork</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACTO ========== -->
+  <section class="section contact" id="contacto">
+    <div class="contact-bg-network"></div>
+    <div class="contact-orb contact-orb-1"></div>
+    <div class="contact-orb contact-orb-2"></div>
+    <div class="container contact-inner">
+      <div class="contact-text reveal">
+        <div class="section-tag">Contacto</div>
+        <h2>¿Listo para construir<br /><span class="gradient-text">el futuro?</span></h2>
+        <p>Contanos tu proyecto y en menos de 24 horas te respondemos con una propuesta inicial.</p>
+        <div class="contact-methods">
+          <a href="mailto:contacto@dualstack.com.ar" class="contact-method glassmorphism" id="contact-email">
+            <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="#4F8CFF" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>contacto@dualstack.com.ar</span>
+          </a>
+          <a href="https://wa.me/5491100000000?text=Hola%2C%20quiero%20iniciar%20un%20proyecto%20con%20Dual%20Stack" target="_blank" class="contact-method glassmorphism" id="contact-whatsapp">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#00E5FF">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            <span>WhatsApp</span>
+          </a>
+          <a href="https://calendly.com/dualstack" target="_blank" class="contact-method glassmorphism" id="contact-meeting">
+            <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="#7B61FF" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span>Agendar reunión</span>
+          </a>
+        </div>
+      </div>
+      <div class="contact-form-wrap reveal">
+        <form class="contact-form glassmorphism" id="contact-form" action="https://formsubmit.co/ajax/contacto@dualstack.com.ar" method="POST" novalidate>
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="tu@empresa.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="service">Servicio de interés</label>
+            <select id="service" name="service">
+              <option value="">Seleccionar servicio...</option>
+              <option value="web">Desarrollo Web</option>
+              <option value="app">Desarrollo de App</option>
+              <option value="ai">Automatización / IA</option>
+              <option value="other">Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="4" placeholder="Contanos sobre tu proyecto..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span>Enviar Mensaje</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+          <div class="form-success" id="form-success">
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="#00E5FF" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+            ¡Mensaje enviado! Te contactamos pronto.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo"><span class="logo-ds">Dual</span><span class="logo-stack">Stack</span></a>
+        <p>Construimos el futuro digital de tu empresa.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Servicios</h5>
+          <a href="#servicios">Desarrollo Web</a>
+          <a href="#servicios">Apps Móviles</a>
+          <a href="#servicios">Automatización</a>
+          <a href="#servicios">Inteligencia Artificial</a>
+        </div>
+        <div class="footer-col">
+          <h5>Empresa</h5>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#proceso">Proceso</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contacto</h5>
+          <a href="mailto:contacto@dualstack.com.ar">contacto@dualstack.com.ar</a>
+          <a href="https://wa.me/5491100000000" target="_blank">WhatsApp</a>
+          <a href="https://calendly.com/dualstack" target="_blank">Agendar reunión</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Dual Stack. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
