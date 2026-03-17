@@ -113,53 +113,13 @@ const formSuccess = document.getElementById('form-success');
 
 // ——— Contact form submission with FormSubmit ———
 // ——— Contact form submission (AJAX for live server) ———
+/* 
 form?.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  const btn = form.querySelector('button[type="submit"]');
-  const btnSpan = btn.querySelector('span');
-  
-  if (!form.checkValidity()) {
-    form.reportValidity();
-    return;
-  }
-
-  const originalText = btnSpan.textContent;
-  btn.disabled = true;
-  btnSpan.textContent = 'Enviando...';
-
-  const formData = new FormData(form);
-  const data = Object.fromEntries(formData.entries());
-
-  try {
-    const response = await fetch(form.action, { 
-      method: 'POST',
-      headers: { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: JSON.stringify(data)
-    });
-
-    const result = await response.json();
-
-    if (response.ok && (result.success === true || result.success === "true")) {
-      btn.style.display = 'none';
-      formSuccess.style.display = 'flex';
-      form.reset();
-    } else {
-      throw new Error(result.message || 'Error en el envío');
-    }
-  } catch (error) {
-    console.error('Submit Error:', error);
-    btnSpan.textContent = 'Error al enviar';
-    btn.style.background = '#ff5f57';
-    setTimeout(() => {
-      btn.disabled = false;
-      btnSpan.textContent = originalText;
-      btn.style.background = '';
-    }, 4000);
-  }
+  // Comentado temporalmente para permitir un envío web tradicional. 
+  // Esto forzará al servidor de FormSubmit a enviar el mail de activación 
+  // vitalicio a la cuenta de Dual Stack sin ser bloqueado por AJAX.
 });
+*/
 
 // ——— Dynamic year in footer ———
 const yearEl = document.querySelector('.footer-bottom p');
