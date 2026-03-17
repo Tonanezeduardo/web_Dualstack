@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <!-- Gradiente Violeta Claro (Letra D y Borde Superior/Izquierdo) -->
+    <linearGradient id="violet-grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9B86FF" />
+      <stop offset="100%" stop-color="#7B61FF" />
+    </linearGradient>
+
+    <!-- Gradiente Violeta Intenso (Letra S y Borde Inferior/Derecho) -->
+    <linearGradient id="violet-grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7B61FF" />
+      <stop offset="100%" stop-color="#5533E6" />
+    </linearGradient>
+
+    <!-- Sombra suave para las letras -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Fondo Blanco con Borde Único ultra fino -->
+  <rect width="96" height="96" x="2" y="2" rx="22" fill="#ffffff" stroke="url(#violet-grad1)" stroke-width="1.5"/>
+
+  <!-- Letra D: Violeta claro -->
+  <text x="36" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="76" font-weight="900" fill="url(#violet-grad1)" text-anchor="middle" filter="url(#shadow)" transform="rotate(-4 36 70)">D</text>
+  
+  <!-- Letra S: Violeta intenso superponiéndose -->
+  <text x="68" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="76" font-weight="900" fill="url(#violet-grad2)" text-anchor="middle" filter="url(#shadow)" transform="rotate(4 68 90)">S</text>
+</svg>
