@@ -1,0 +1,32 @@
+# ============================================
+# Dual Stack — robots.txt
+# https://dualstack.com.ar
+# ============================================
+
+# Permitir todos los buscadores tradicionales
+User-agent: *
+Allow: /
+Disallow:
+
+# Sitemap
+Sitemap: https://dualstack.com.ar/sitemap.xml
+
+# ============================================
+# Gestión de Crawlers de IA
+# ============================================
+
+# Bloquear crawlers de entrenamiento de modelos
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+# Permitir crawlers de IA que generan citas/referencias con enlaces
+# ChatGPT-User (browsing), ClaudeBot, PerplexityBot → Permitidos por defecto (regla *)

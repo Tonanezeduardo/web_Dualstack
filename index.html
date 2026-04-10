@@ -3,19 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Dual Stack — Agencia de Desarrollo Digital en Argentina. Creamos páginas web a medida, aplicaciones móviles escalables, e implementamos inteligencia artificial para potenciar tu empresa." />
-  <meta name="keywords" content="desarrollo web, programador web argentina, crear pagina web, hacer aplicacion movil, agencia de software, inteligencia artificial para empresas, desarrollo de software a medida, Dual Stack">
-  <title>Dual Stack | Desarrollo de Páginas Web y Apps Móviles</title>
+  <meta name="description" content="Dual Stack — Agencia de desarrollo web y software a medida en Argentina. ¿Necesitás una página web profesional, una app móvil o automatizar procesos con IA? Pedí tu presupuesto sin compromiso." />
+  <meta name="keywords" content="desarrollo web argentina, presupuesto pagina web, crear aplicacion movil, software a medida para empresas, automatizar procesos con inteligencia artificial, agencia de desarrollo digital, programador web freelance argentina, Dual Stack">
+  <title>Dual Stack | Desarrollo Web, Apps Móviles y Software a Medida en Argentina</title>
 
   <!-- Datos Estructurados (JSON-LD) para máximo SEO -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
+    "@type": "ProfessionalService",
     "name": "Dual Stack",
     "url": "https://dualstack.com.ar",
     "logo": "https://dualstack.com.ar/favicon.svg",
-    "description": "Agencia de desarrollo web y móvil especialista en transformar empresas con software de alto rendimiento y soluciones de IA.",
+    "description": "Agencia de desarrollo web, aplicaciones móviles y soluciones de inteligencia artificial a medida para empresas en Argentina.",
+    "areaServed": [
+      {
+        "@type": "Country",
+        "name": "Argentina"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Latinoamérica"
+      }
+    ],
+    "serviceType": ["Desarrollo Web", "Desarrollo de Aplicaciones Móviles", "Automatización con Inteligencia Artificial", "Software a Medida"],
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "AR"
@@ -27,17 +38,63 @@
     },
     "sameAs": [
       "https://wa.me/5491100000000"
-    ],
-    "offers": {
-      "@type": "Offer",
-      "description": "Desarrollo Web, Desarrollo de Apps Móviles, Soluciones de Inteligencia Artificial"
-    }
+    ]
+  }
+  </script>
+
+  <!-- FAQ Structured Data (Rich Snippets) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cuánto cuesta desarrollar una página web a medida en Argentina?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El costo varía según la complejidad del proyecto. Una landing page profesional puede arrancar desde los USD 500, mientras que plataformas web más complejas con funcionalidades avanzadas parten desde USD 2.000. En Dual Stack ofrecemos presupuestos personalizados y sin compromiso."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto tiempo lleva desarrollar una aplicación móvil?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El desarrollo de una app móvil suele tomar entre 4 y 12 semanas dependiendo de las funcionalidades requeridas. Trabajamos con metodologías ágiles para entregar versiones funcionales lo antes posible."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo puede la inteligencia artificial ayudar a mi empresa?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La IA puede automatizar tareas repetitivas, analizar grandes volúmenes de datos, mejorar la atención al cliente con chatbots inteligentes y optimizar procesos internos. Implementamos soluciones de IA adaptadas a cada negocio para reducir costos y aumentar la productividad."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué tecnologías utilizan para el desarrollo de software?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Trabajamos con tecnologías modernas y escalables como React, Next.js, Node.js, PostgreSQL, y plataformas de IA como OpenAI. Elegimos el stack tecnológico más adecuado para cada proyecto."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Ofrecen soporte y mantenimiento después del lanzamiento?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, ofrecemos soporte continuo post-lanzamiento que incluye monitoreo de rendimiento, corrección de errores, actualizaciones de seguridad y mejoras funcionales. Nuestro tiempo de respuesta es menor a 24 horas."
+        }
+      }
+    ]
   }
   </script>
 
   <!-- SEO & Social Media -->
-  <link rel="canonical" href="https://dualstack.dev/" />
-  <meta property="og:title" content="Dual Stack | Desarrollo de Páginas Web y Apps Móviles" />
+  <link rel="canonical" href="https://dualstack.com.ar/" />
+  <meta property="og:title" content="Dual Stack | Desarrollo Web, Apps Móviles y Software a Medida en Argentina" />
   <meta property="og:description" content="Especialistas en transformar empresas con software de alto rendimiento, apps móviles e integraciones con IA." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://dualstack.com.ar/" />
@@ -69,6 +126,7 @@
         <li><a href="#proceso">Proceso</a></li>
         <li><a href="#nosotros">Nosotros</a></li>
         <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#faq">FAQ</a></li>
       </ul>
       <a href="#contacto" class="btn btn-primary nav-cta">Hablemos de tu proyecto</a>
       <button class="hamburger" id="hamburger" aria-label="Menú">
@@ -88,7 +146,7 @@
 
         <h1 class="hero-title reveal">
           Construí el futuro digital <br />
-          <span class="gradient-text">de tu empresa</span> con desarrollo web y apps a medida.
+          <span class="gradient-text">de tu empresa</span> con desarrollo web y software a medida.
         </h1>
         <p class="hero-subtitle reveal">
           Dual Stack crea soluciones digitales modernas para empresas que quieren <strong>automatizar, escalar e innovar</strong>.
@@ -212,8 +270,8 @@
     <div class="container">
       <div class="section-header reveal">
         <div class="section-tag">Servicios</div>
-        <h2>Todo lo que tu empresa<br /><span class="gradient-text">necesita para crecer</span></h2>
-        <p>Soluciones digitales completas, diseñadas para negocios que buscan resultados reales.</p>
+        <h2>Soluciones de desarrollo web y software a medida <span class="gradient-text">para hacer crecer tu empresa</span></h2>
+        <p>Desde páginas web profesionales hasta apps móviles y automatización con IA. Todo lo que necesitás para digitalizar tu negocio.</p>
       </div>
       <div class="services-grid">
 
@@ -224,8 +282,8 @@
               <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
             </svg>
           </div>
-          <h3>Desarrollo Web</h3>
-          <p>Páginas web a medida, landing pages, ecommerce y plataformas escalables con tecnología de vanguardia.</p>
+          <h3>Desarrollo de Páginas Web Profesionales</h3>
+          <p>Creamos páginas web a medida, landing pages de alta conversión, tiendas online y plataformas escalables para empresas que quieren vender más.</p>
 
           <div class="service-glow glow-blue"></div>
         </div>
@@ -237,8 +295,8 @@
               <rect x="7" y="2" width="10" height="20" rx="2"/><path d="M12 18h.01"/>
             </svg>
           </div>
-          <h3>Desarrollo de Apps</h3>
-          <p>Aplicaciones móviles y web diseñadas para optimizar procesos empresariales y mejorar la experiencia del usuario.</p>
+          <h3>Desarrollo de Apps Móviles a Medida</h3>
+          <p>Diseñamos y programamos aplicaciones móviles y web apps que optimizan procesos internos y mejoran la experiencia de tus clientes.</p>
 
           <div class="service-glow glow-violet"></div>
         </div>
@@ -250,8 +308,8 @@
               <circle cx="12" cy="12" r="3"/><path d="M12 2v2.5M12 19.5V22M4.22 4.22l1.77 1.77M18.01 18.01l1.77 1.77M2 12h2.5M19.5 12H22M4.22 19.78l1.77-1.77M18.01 5.99l1.77-1.77"/>
             </svg>
           </div>
-          <h3>Automatización e IA</h3>
-          <p>Herramientas de automatización, integraciones con IA y flujos digitales para mejorar la productividad de tu equipo.</p>
+          <h3>Automatización de Procesos con Inteligencia Artificial</h3>
+          <p>Implementamos chatbots, flujos automáticos e integraciones con IA para que tu equipo deje de perder tiempo en tareas repetitivas.</p>
 
           <div class="service-glow glow-cyan"></div>
         </div>
@@ -781,6 +839,70 @@
             ¡Mensaje enviado! Te contactamos pronto.
           </div>
         </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="section faq" id="faq">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Preguntas Frecuentes</div>
+        <h2>Todo lo que necesitás saber <span class="gradient-text">antes de empezar</span></h2>
+        <p>Las consultas más habituales de empresas que buscan desarrollo web, apps móviles o soluciones con IA.</p>
+      </div>
+      <div class="faq-grid">
+
+        <details class="faq-item glassmorphism reveal">
+          <summary class="faq-question">
+            <span>¿Cuánto cuesta desarrollar una página web a medida en Argentina?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="faq-answer">
+            <p>El costo varía según la complejidad del proyecto. Una landing page profesional puede arrancar desde los USD 500, mientras que plataformas web más complejas con funcionalidades avanzadas parten desde USD 2.000. En Dual Stack ofrecemos <strong>presupuestos personalizados y sin compromiso</strong>.</p>
+          </div>
+        </details>
+
+        <details class="faq-item glassmorphism reveal">
+          <summary class="faq-question">
+            <span>¿Cuánto tiempo lleva desarrollar una aplicación móvil?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="faq-answer">
+            <p>El desarrollo de una app móvil suele tomar entre <strong>4 y 12 semanas</strong> dependiendo de las funcionalidades requeridas. Trabajamos con metodologías ágiles para entregar versiones funcionales lo antes posible.</p>
+          </div>
+        </details>
+
+        <details class="faq-item glassmorphism reveal">
+          <summary class="faq-question">
+            <span>¿Cómo puede la inteligencia artificial ayudar a mi empresa?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="faq-answer">
+            <p>La IA puede automatizar tareas repetitivas, analizar grandes volúmenes de datos, mejorar la atención al cliente con chatbots inteligentes y optimizar procesos internos. Implementamos <strong>soluciones de IA adaptadas a cada negocio</strong> para reducir costos y aumentar la productividad.</p>
+          </div>
+        </details>
+
+        <details class="faq-item glassmorphism reveal">
+          <summary class="faq-question">
+            <span>¿Qué tecnologías utilizan para el desarrollo de software?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="faq-answer">
+            <p>Trabajamos con tecnologías modernas y escalables como <strong>React, Next.js, Node.js, PostgreSQL</strong>, y plataformas de IA como OpenAI. Elegimos el stack tecnológico más adecuado para cada proyecto.</p>
+          </div>
+        </details>
+
+        <details class="faq-item glassmorphism reveal">
+          <summary class="faq-question">
+            <span>¿Ofrecen soporte y mantenimiento después del lanzamiento?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="faq-answer">
+            <p>Sí, ofrecemos <strong>soporte continuo post-lanzamiento</strong> que incluye monitoreo de rendimiento, corrección de errores, actualizaciones de seguridad y mejoras funcionales. Nuestro tiempo de respuesta es menor a 24 horas.</p>
+          </div>
+        </details>
+
       </div>
     </div>
   </section>

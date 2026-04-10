@@ -925,6 +925,76 @@ h5 { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.08em; }
 .footer-bottom p { color: var(--text-muted); font-size: 0.82rem; }
 
 /* ===========================
+   FAQ
+   =========================== */
+
+.faq { background: var(--bg-2); }
+
+.faq-grid {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.faq-item {
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.faq-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 22px 28px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text);
+  list-style: none;
+  transition: color 0.25s;
+}
+.faq-question::-webkit-details-marker { display: none; }
+.faq-question::marker { display: none; content: ''; }
+
+.faq-question:hover { color: var(--blue); }
+
+.faq-chevron {
+  flex-shrink: 0;
+  color: var(--text-muted);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s;
+}
+
+.faq-item[open] .faq-chevron {
+  transform: rotate(180deg);
+  color: var(--blue);
+}
+
+.faq-answer {
+  padding: 0 28px 22px;
+  animation: faqFadeIn 0.3s ease-out;
+}
+.faq-answer p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+.faq-answer p strong { color: var(--text); }
+
+@keyframes faqFadeIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+
+/* ===========================
    RESPONSIVE
    =========================== */
 
@@ -1047,6 +1117,11 @@ h5 { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.08em; }
   .contact-form { padding: 28px 20px; }
   .form-row { grid-template-columns: 1fr; gap: 0; }
 
+  /* FAQ */
+  .faq { min-height: unset; }
+  .faq-question { padding: 18px 20px; font-size: 0.92rem; }
+  .faq-answer { padding: 0 20px 18px; }
+
   /* FOOTER */
   .footer-inner { flex-direction: column; gap: 32px; }
   .footer-links { flex-direction: column; gap: 24px; }
@@ -1070,6 +1145,10 @@ h5 { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.08em; }
   .service-card { padding: 24px 20px; }
   .timeline-content { padding: 16px; }
   .contact-form { padding: 20px 16px; }
+
+  /* FAQ */
+  .faq-question { padding: 16px; font-size: 0.88rem; }
+  .faq-answer { padding: 0 16px 16px; }
 
   .form-group input,
   .form-group select,
